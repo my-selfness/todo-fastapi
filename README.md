@@ -46,6 +46,10 @@ These are majors components to achieve the projects goal.
 ```
 FastApi
 ```
+for server
+```
+Uvicorn
+```
 For data Storage
 ```
 pyMongo
@@ -68,7 +72,7 @@ pip i requirements.txt
 Or 
 
 ```
-pip install 'fastapi[all]' 'pymongo[srv]' python-dotenv
+pip install 'fastapi[all]' 'pymongo[srv]' python-dotenv 'uvicorn[standard]'
 ```
 
 <!-- End with an example of getting some data out of the system or using it for a little demo. -->
@@ -106,7 +110,7 @@ Give an example
 - [Python](https://www.python.org/) - Programming Language
 - [FastApi](https://fastapi.tiangolo.com/) - APi Framework
 - [MongoDB](https://www.mongodb.com/) - Database
-<!-- - [NodeJs](https://nodejs.org/en/) - Server Environment -->
+- [Uvicorn](https://www.uvicorn.org/) - Server 
 
 ## ✍️ Authors <a name = "authors"></a>
 
