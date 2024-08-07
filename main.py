@@ -1,18 +1,11 @@
-from fastapi import FastAPI, BackgroundTasks
-from dotenv import load_dotenv
-from pymongo.mongo_client import MongoClient
-from routes.route import router
-import os
-
-
+from fastapi import FastAPI
+from routes import todo_route,auth_route
 
 app = FastAPI()
-app.include_router(router)
+app.include_router(todo_route.router)
+app.include_router(auth_route.authrouter)
 
-# Load environment variables
-load_dotenv()
 
-# Port
-port = int(os.getenv("PORT"))
+
 
 # uvicorn main:app --reload
