@@ -1,3 +1,5 @@
+from operator import __not__
+import uvicorn
 from fastapi import FastAPI
 from routes import todo_route,auth_route
 from fastapi.middleware.cors import CORSMiddleware
@@ -24,6 +26,8 @@ app.include_router(todo_route.router)
 app.include_router(auth_route.authrouter)
 
 
-
-
 # uvicorn main:app --reload
+
+
+# if __name__ == "__main__":
+#     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

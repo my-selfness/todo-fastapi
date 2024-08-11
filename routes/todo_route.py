@@ -30,3 +30,6 @@ async def put_todo(id:str,todo:Todo):
 async def delete_todo(id:str):
     collection_name.find_one_and_delete({"_id":ObjectId(id)})
     return{"message":"Todo Deleted Successfully"}
+
+
+# TODO: get only the logged in user todo
