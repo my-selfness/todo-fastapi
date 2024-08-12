@@ -6,7 +6,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from typing_extensions import Annotated
 import os
-from auth_logic.auth import authenticate_user,create_access_token,hash_password,verify_token
+from controller.auth import authenticate_user,create_access_token,hash_password,verify_token
 from datetime import  timedelta
 
 
